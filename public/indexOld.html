@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <title>Ficha Compra</title>
+</head>
+
+<body>
+  <main>
+    <article id="artContenido">
+      <header>
+        <!-- Comiendo de titulo y bloques -->
+        <section id="dvTituloBloque" class="row">
+          <h1 class=" col-md-7">Servicio Nacional de Capacitación y Empleo</h1>
+          <h3 id="idPeriodo" class=" col-md-6">PERIODO : 01 ENERO A 31 DE DICIEMBRE DE 2017</h3>
+          <div id="idDatosComprador" class="col-md-6">
+            <h3> Dirección: Huérfanos 1273 - Piso 11, Santiago</h3>
+            <h3> RUT: 61.531.000-K</h3>
+          </div>
+        </section>
+      </header>
+      <hr>
+      <div id="dvDatosPago" class="row dvBloqueEncabezado">
+        <!-- Primer Bloque -->
+        <div class="col-md-12">
+          <div class="row">
+            <div id="dvRankingLeyenda" class="col-md-2">
+              <strong>105°</strong>
+              <p>EN EL RANKING DE PAGADORES
+              </p>
+            </div>
+            <section style="margin-left: 10px" class="col-md-">
+              <h1>¿Cómo paga este organismo?</h1>
+              <h2>Este organismo se encuentra en el
+                <br> Ranking de pagadores de un total de
+                <strong>858 organismos públicos</strong>
+              </h2>
+            </section>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <section class="row dvBloque">
+        <!--Segundo bloque (RECLAMOS) -->
+        <h1 class="col-md-12">¿Cuántos reclamos ha recibido en este periodo? </h1>
+        <div class="col-md-12">
+          <div class="row  dvBloqueDato">
+            <div class="col-md-6">
+              <div class="row">
+                <h3 class="col-md-12">Reclamos recibidos por
+                  <strong>pago fuera de plazo</strong>
+                </h3>
+                <div class="col-md-4 dvReclamosTotales">
+                  <span id="idLugarRanking">80</span><strong>/10</strong>
+
+                  <p>RECLAMOS INGRESADOS POR PROVEEDORES</p>
+
+                </div>
+                <div class="col-md-6 dvReclamoOrganismo">
+                  <span>210</span>
+                  <p>RECLAMOS HAN RECIBIDO ORGANISMOS SIMILARES*</p>
+                </div>
+                <div class="col-md-2">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 leftLine">
+              <div class="row">
+                <h3>Reclamos recibidos por
+                  <strong>irregularidades en sus procesos de compra</strong>
+                </h3>
+                <div class="col-md-4">
+                  <span>42</span>
+                  <p>RECLAMOS INGRESADOS POR PROVEEDORES</p>
+
+                </div>
+                <div class="col-md-6 dvReclamoOrganismo">
+                  <span>236</span>
+                  <p>RECLAMOS HAN RECIBIDO ORGANISMOS SIMILARES*</p>
+                </div>
+                <div class="col-md-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div>
+        <hr style="height: 10px">
+      </div>
+
+      <div class="row dvBloque">
+        <!--Tercer bloque (RECLAMOS) -->
+        <div class="col-md-12">
+          <div class="row  dvBloqueDato">
+            <div class="col-md-6">
+              <section class="row">
+                <h1 class="col-md-12">¿Cuántos documentos solicita para ofertar?</h1>
+                <h3>Documentos solicitados en las licitaciones publicadas</h3>
+                <div class="col-md-6">
+                  <span>16</span>
+                  <br/>
+                  <p>DOCUMENTOS EN PROMEDIO SOLICITA POR LICITACIÓN</p>
+
+                </div>
+                <div class="col-md-6 leftLine dvDocumentosTotales">
+                  <span>5</span>
+                  <strong>/10</strong>
+                  <p>LICITACIONES SOLICITA GARANTIAS DE OFERTA</p>
+                </div>
+                <div id="dvBurocrata" class="p-2">
+                  Este organismo suele solicitar muchos adjuntos para ofertar.
+                </div>
+              </section>
+            </div>
+            <div class="col-md-6 leftLine">
+              <section class="row">
+                <h1 class="col-md-12">¿Cuántos proveedores han transado con él?</h1>
+                <h3>Proveedores que se adjudicaron negocios con este comprador según tamaño de empresa.</h3>
+                <div class="col-md-6" id="root"></div>
+                <div class="col-md-6" style="margin: auto">
+                  <span>180</span>
+                  <br/>
+                  <p>PROVEEDORES HAN TRANSADO CON ESTE ORGANISMO</p>
+
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+        <hr style="height: 10px">
+      <div class="row dvBloque justify-content-center">
+          <section class="d-flex flex-column mb-4">
+            <h1 >¿Quieres saber más de este organismo?</h1>
+            <a type="button" href="http://datosabiertos.chilecompra.cl/Home/OrganismoComprador" class="btn btn-dark btn-lg mt-2">Ir a Datos Abiertos</a>
+          </section>
+      </div>
+      <hr style="height: 10px">
+      <div class="d-flex justify-content-end mb-4">
+        <a href="listado.html">Ver todos los organismos</a>
+      </div>
+      
+    </article>
+  </main>
+  <footer></footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
